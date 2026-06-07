@@ -347,6 +347,48 @@ nav.scrolled {
     radial-gradient(circle at 85% 80%, rgba(13, 46, 99, 0.12) 0%, transparent 35%);
 }
 
+/* ─── Rocket Launcher Animation ─── */
+.rocket-container {
+  position: absolute;
+  left: -80px;
+  bottom: -80px;
+  width: 56px;
+  height: 56px;
+  z-index: 0; 
+  pointer-events: none;
+  animation: rocket-launch 10s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+.rocket-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 15px rgba(10, 88, 202, 0.4));
+}
+
+@keyframes rocket-launch {
+  0% {
+    left: -80px;
+    bottom: -80px;
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  1.5% {
+    opacity: 1;
+  }
+  22% {
+    left: 110%;
+    bottom: 110%;
+    transform: scale(1.15);
+    opacity: 0;
+  }
+  100% {
+    left: 110%;
+    bottom: 110%;
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
+
 .hero-floating {
   position: absolute;
   border-radius: 50%;

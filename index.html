@@ -72,6 +72,33 @@
     <div class="hero-right">
       <div class="hero-bg-pattern"></div>
 
+      <!-- Rocket Launcher Element -->
+      <div class="rocket-container">
+        <svg class="rocket-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+          <!-- Flame -->
+          <path d="M14 42c-3.5 3.5-5.5 8.5-5 13.5 5 .5 10-1.5 13.5-5c2.5-2.5 3-6.5 1.5-9.5-3-1.5-7.5-1.5-10 1z" fill="url(#rocket-flame-grad)" />
+          <!-- Wings -->
+          <path d="M22 38l-9 9c-1 1-1 2.5 0 3.5s2.5 1 3.5 0l9-9-3.5-3.5z" fill="var(--blue-dark)" />
+          <path d="M38 22l9-9c1-1 2.5-1 3.5 0s1 2.5 0 3.5l-9 9-3.5-3.5z" fill="var(--blue-dark)" />
+          <!-- Rocket Body -->
+          <path d="M49.5 14.5c-4.5-4.5-13-5-20.5.5L16.5 27.5c-1 1-1 2.5 0 3.5l6.5 6.5c1 1 2.5 1 3.5 0l12.5-12.5c5.5-7.5 5-16 .5-20.5z" fill="#ffffff" />
+          <!-- Stripe on Rocket -->
+          <path d="M26.5 37.5l12.5-12.5" stroke="var(--blue)" stroke-width="2.5" stroke-linecap="round" />
+          <!-- Window -->
+          <circle cx="37" cy="27" r="3.5" fill="var(--blue-accent)" stroke="var(--blue-dark)" stroke-width="1.5" />
+          <!-- Nose Cone -->
+          <path d="M49.5 14.5c-1.5-1.5-4-2.5-6.5-2.5 2.5 2.5 3.5 5 2.5 6.5 1.5-1 2.5-2.5 4-4z" fill="var(--blue-accent)" />
+          <!-- Gradients -->
+          <defs>
+            <linearGradient id="rocket-flame-grad" x1="9" y1="55" x2="22" y2="42" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FFD600" />
+              <stop offset="50%" stop-color="#FF7A00" />
+              <stop offset="100%" stop-color="transparent" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
       <!-- Floating Decorative Elements — lebih vivid & beragam delay -->
       <div class="hero-floating"
         style="top:12%;right:10%;width:72px;height:72px;border-radius:18px;background:var(--blue);opacity:.22;animation-duration:4.5s;animation-delay:0s;"></div>
